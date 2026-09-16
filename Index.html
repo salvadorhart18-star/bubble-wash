@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bubble Wash | Mobile Car Wash</title>
+<meta name="description" content="Bubble Wash brings convenient car cleaning to your location in Ormoc City.">
+<style>
+:root{--blue:#087cf0;--dark:#08233f;--light:#f4f9ff;--text:#24364b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:15px 7%;box-shadow:0 2px 15px #00000010}
+.logo{font-size:25px;font-weight:800;color:var(--blue)}nav a{color:var(--dark);text-decoration:none;margin-left:22px;font-weight:600}
+.hero{padding:85px 7% 75px;background:linear-gradient(135deg,#e8f5ff,#fff);display:flex;align-items:center;gap:50px;min-height:590px}
+.hero>div{flex:1}.badge{display:inline-block;background:#d9efff;color:#0567c9;border-radius:30px;padding:7px 14px;font-weight:700;font-size:14px}
+h1{font-size:clamp(44px,7vw,76px);line-height:1.02;color:var(--dark);margin:18px 0}h1 span{color:var(--blue)}
+.hero p{font-size:19px;max-width:600px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:14px 23px;border-radius:12px;text-decoration:none;font-weight:800;border:2px solid var(--blue);cursor:pointer}
+.primary{background:var(--blue);color:white}.secondary{color:var(--blue);background:white}
+.car-card{background:white;border-radius:28px;padding:35px;box-shadow:0 20px 60px #087cf025;text-align:center}
+.car{font-size:145px;filter:drop-shadow(0 12px 8px #087cf030)}
+section{padding:75px 7%}section h2{text-align:center;color:var(--dark);font-size:38px;margin:0 0 12px}.lead{text-align:center;max-width:650px;margin:0 auto 42px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;padding:28px;border-radius:18px;box-shadow:0 8px 30px #08233f0b}.icon{font-size:38px}
+.steps{counter-reset:step}.step{position:relative;padding-left:65px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;background:var(--blue);color:white;width:45px;height:45px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.prices{background:white}.price{border:2px solid #dcecff;text-align:center}.price h3{color:var(--dark);font-size:23px}.amount{font-size:34px;color:var(--blue);font-weight:800}
+.cta{background:var(--dark);color:white;text-align:center}.cta h2{color:white}.cta p{max-width:600px;margin:0 auto 25px}
+form{max-width:600px;margin:25px auto 0;background:white;padding:28px;border-radius:20px;color:var(--text);text-align:left}label{display:block;font-weight:700;margin:12px 0 6px}input,select{width:100%;padding:13px;border:1px solid #cbd8e5;border-radius:9px;font-size:16px}button{width:100%;margin-top:18px;padding:14px;border:0;border-radius:10px;background:var(--blue);color:white;font-size:16px;font-weight:800;cursor:pointer}
+footer{text-align:center;padding:25px;background:#061a30;color:#cbd8e5;font-size:14px}
+@media(max-width:750px){nav a{display:none}.hero{flex-direction:column;text-align:center;padding-top:55px}.hero p{font-size:17px}.buttons{justify-content:center}.grid{grid-template-columns:1fr}.car{font-size:100px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">🫧 Bubble Wash</div><div><a href="#how">How It Works</a><a href="#services">Services</a><a href="#book">Book</a></div></nav>
+
+<header class="hero">
+<div>
+<span class="badge">MOBILE CAR WASH • ORMOC CITY</span>
+<h1>Your Car.<br><span>Your Place.</span><br>Our Clean.</h1>
+<p>Skip the long queue. Bubble Wash brings convenient car cleaning to your location, so you can spend your time on what matters.</p>
+<div class="buttons"><a class="btn primary" href="#book">Book a Wash</a><a class="btn secondary" href="#how">See How It Works</a></div>
+</div>
+<div class="car-card"><div class="car">🚙</div><h3>Clean car. Less waiting.</h3><p>Simple booking • Convenient service • Transparent options</p></div>
+</header>
+
+<section id="how">
+<h2>How Bubble Wash Works</h2><p class="lead">A simple way to get your car cleaned without spending your day in a car-wash queue.</p>
+<div class="grid steps">
+<div class="card step"><h3>Choose</h3><p>Select the wash package that fits your car.</p></div>
+<div class="card step"><h3>Schedule</h3><p>Tell us when and where you want the service.</p></div>
+<div class="card step"><h3>Relax</h3><p>Our mobile wash team comes to your location.</p></div>
+</div>
+</section>
+
+<section id="services" class="prices">
+<h2>Wash Options</h2><p class="lead">Sample packages for our school-project concept.</p>
+<div class="grid">
+<div class="card price"><h3>Basic Bubble</h3><div class="amount">₱300</div><p>Exterior wash<br>Rinse & dry<br>Basic tire clean</p></div>
+<div class="card price"><h3>Premium Bubble</h3><div class="amount">₱450</div><p>Exterior wash<br>Deep tire clean<br>Interior vacuum</p></div>
+<div class="card price"><h3>Full Bubble</h3><div class="amount">₱600</div><p>Exterior + interior<br>Vacuum<br>Detailed finishing</p></div>
+</div>
+</section>
+
+<section>
+<h2>Why Bubble Wash?</h2><p class="lead">Designed around common car-wash frustrations: waiting, uncertainty, and inconvenient schedules.</p>
+<div class="grid">
+<div class="card"><div class="icon">⏱️</div><h3>Less Waiting</h3><p>Schedule ahead instead of spending a long time in a queue.</p></div>
+<div class="card"><div class="icon">📍</div><h3>Convenient</h3><p>Get your car cleaned where your schedule allows.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Easy Booking</h3><p>Choose your package and preferred schedule through a simple form.</p></div>
+</div>
+</section>
+
+<section id="book" class="cta">
+<h2>Ready for a cleaner car?</h2>
+<p>Be one of the first people to try the Bubble Wash concept. Submit your preferred service below.</p>
+<form id="bookingForm">
+<label for="name">Name</label><input id="name" required placeholder="Your name">
+<label for="package">Wash package</label><select id="package"><option>Basic Bubble — ₱300</option><option>Premium Bubble — ₱450</option><option>Full Bubble — ₱600</option></select>
+<label for="date">Preferred date</label><input id="date" type="date" required>
+<label for="location">Service location</label><input id="location" required placeholder="Example: Ormoc City">
+<button type="submit">Request a Wash</button>
+<p id="success" style="display:none;text-align:center;font-weight:700;color:#087cf0;margin-bottom:0">Thank you! Your request has been recorded for this demo.</p>
+</form>
+</section>
+
+<footer>© 2026 Bubble Wash • Digital Marketing Finals Project • Hypothetical Service</footer>
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ document.getElementById('success').style.display='block';
+ this.querySelector('button').textContent='Request Submitted ✓';
+});
+</script>
+</body>
+</html>
